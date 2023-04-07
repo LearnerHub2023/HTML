@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .minister {
+            background-color: green;
+        }
+        .education-minister {
+            color: red;
+        }
+       
+        #media, #politics{
+            border: 3px solid black;
+        }
+        .news{
+            background-color: blue;
+        }
+        .movie{
+            background-color: lightgreen;
+        }
+        [title='politics']{
+            color:brown;
+        }
+        [title='media provides the articles of news and movies']{
+            color:cyan;
+        }
+        *{
+            font-style: italic;
+        }
+        [id="media"]{
+            font-weight: 900;
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+
+<body>
+    <div name="politics" id="politics">
+        <h1 title="politics">politics</h1>
+        <div class="minister education-minister">MLA</div>
+        <div>MLA</div>
+        <div>MLA</div>
+        <div class="minister">MLA</div>
+        <div>MLA</div>
+        <div>MLA</div>
+        <div>MLA</div>
+        <div class="minister">MLA</div>
+        <div>MLA</div>
+        <div>MLA</div>
+        <div class="minister">MLA</div>
+        <div class="minister">MLA</div>
+        <div class="minister education-minister">MLA</div>
+    </div>
+    <br>
+    <div id="media">
+        <h1 title="media provides the articles of news and movies">Media</h1>
+        <div class="news">Tv9</div>
+        <div class="movie">Prime</div>
+        <div class="movie">Netflix</div>
+        <div class="news">ETV</div>
+        <div class="movie">AHA</div>
+        <div class="news">V6</div>
+    </div>
+</body>
+
+</html>
