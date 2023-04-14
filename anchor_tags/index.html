@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anchor tags</title>
+    <style>
+        iframe{
+            width: 100%;
+            height: 500px;
+        }
+        #wiki{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="about.html" target="_self">about link uses _self as target</a><br>
+    <a href="about.html" target="_blank">about link uses _blank as target</a><br>
+    <a href="contact.html" target="iframe-1">contact link uses iframe-1 as target</a><br>
+    <a href="about.html" target="iframe-2">about link uses iframe-2 as target</a><br>
+
+    <iframe id="wiki" name="iframe-1" src="https://www.wikipedia.org/"></iframe><br>
+    <iframe name="iframe-2" src="contact.html"></iframe>
+</body>
+</html>
