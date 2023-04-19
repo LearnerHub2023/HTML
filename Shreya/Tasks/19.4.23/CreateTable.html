@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-APR-2023—Task:</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 0.5px solid black;
+            width: fit-content
+        }
+
+        tr:nth-child(even) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>19-APR-2023—Task:</h3>
+
+    <pre>
+        1. Create a table with 6 rows and 6 columns table
+        2. Use zibra strips color for even rows. take yellow
+        3. Need to colgroup 4th and 5th columns as group.
+        4. rowspan(4th row 2nd col and 5th row 2nd column)
+        5. colspan(3rd col and 4th col in second row). 
+       </pre>
+
+    <table>
+        <colgroup>
+            <col span="1">
+            <col span="1">
+            <col span="1">
+            <col span="2" style="background-color:blueviolet;">
+
+        </colgroup>
+        <tr>
+            <th Class="t1-s-col-1"> S.NO</th>
+            <th class="t1-FN-col-2">First Name</th>
+            <th class="t1-LN-col-3">Last Name</th>
+            <th class="t1-A-col-4">Age</th>
+            <th class="t1-G-col-5">Gender</th>
+            <th class="t1-Y/N-col-6">Y/N</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>FN1</td>
+            <td>LN1</td>
+            <td>20</td>
+            <td>M</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>FN2</td>
+            <td colspan="2">LN2</td>
+            <td>F</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>FN3</td>
+            <td>LN3</td>
+            <td>23</td>
+            <td>M</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">FN4</td>
+            <td>LN4</td>
+            <td>21</td>
+            <td>F</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>LN5</td>
+            <td>25</td>
+            <td>M</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>FN6</td>
+            <td>LN6</td>
+            <td>26</td>
+            <td>M</td>
+            <td>Y</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
