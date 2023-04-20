@@ -1,0 +1,33 @@
+h1{
+    text-decoration: underline;
+    text-align: center;
+    background-color: darksalmon;
+}
+ul{
+    list-style-type: square;
+}
+ol{
+    list-style-type: lower-roman;
+}
+dt{
+    
+    background-color: blanchedalmond;
+}
+dd{
+ 
+    font: italic;
+    background-color:ivory;
+    background-position:center;
+}
+h3{
+background-color:aliceblue;
+ color: red;
+}
+pre{
+ background-color:aliceblue;
+ 
+}
+h4{
+    background-color:darkgrey;
+    
+}
