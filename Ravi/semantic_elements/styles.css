@@ -1,0 +1,63 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background-color: lightgreen;
+    height: 20%;
+    position: absolute;
+}
+
+footer{
+    width: 100%;
+    background-color: yellow;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+}
+
+main{    
+    width: 100%;
+    background-color: white;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+}
+
+aside{
+    float: left;
+    background-color: lightblue;
+    height: 100%;
+    width: 30%;
+}
+.main-content{
+    background-color: cyan;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    left: 30%;
+    float: none;
+}
+.logo{
+    width: 30%;
+    background: beige;
+    height: 100%;
+    position: absolute;
+}
+nav{
+    position: absolute;
+    left: 30%;
+    width: 70%;
+}
+
+ul{
+    padding: 0;
+}
+li{
+    float:left
+    wi
+}
