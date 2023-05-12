@@ -1,0 +1,14 @@
+{
+    "employees":[
+        {
+            "empid":1,
+            "empname": "ravi",
+            "designation": "software engineer"
+        },
+        {
+            "empid":2,
+            "empname": "shreya",
+            "designation": "software engineer"
+        }
+    ]
+}
