@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function update(){
+            let body={
+                    id:9,
+                    empname:"ravi",
+                    designation:"testing"
+                };
+
+            // fetch("http://localhost:3000/employees",{
+            //     method:"put",
+            //     body:JSON.stringify(body)
+            // }).then((res)=>{
+            //     console.log(res);
+            //     return res.json();
+            // }).then(data=>{
+            //     console.log(data);
+            // })
+
+            fetch('http://localhost:3000/employees', {
+                method: 'PUT',
+                body: JSON.stringify(body),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                }
+            })
+                .then(function (response) {
+                    return response.json()
+                })
+                .then(function (data) {
+                    console.log(data)
+                }).catch(error => console.error('Error:', error));
+        }
+    </script>
+</head>
+<body>
+    <form name="employeeForm" method="post" action="http://localhost:3000/employees" target="_blank">
+        <!-- <label for="id">empid</label>
+        <input id="id" name="id" type="text"> -->
+        <label for="empname">empname</label>
+        <input id="empname" name="empname" type="text">
+        <label for="designation">designation</label>
+        <input id="designation" name="designation" type="text">
+        <input type="button" value="put" onclick="update()">
+        <button>submit</button>
+    </form> 
+</body>
+</html>
