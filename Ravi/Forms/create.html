@@ -8,7 +8,6 @@
     <script>
         function update(){
             let body={
-                    id:9,
                     empname:"ravi",
                     designation:"testing"
                 };
@@ -23,7 +22,7 @@
             //     console.log(data);
             // })
 
-            fetch('http://localhost:3000/employees', {
+            fetch('http://localhost:3000/employees/5', {
                 method: 'PUT',
                 body: JSON.stringify(body),
                 headers: {
@@ -35,12 +34,12 @@
                 })
                 .then(function (data) {
                     console.log(data)
-                }).catch(error => console.error('Error:', error));
+                })
         }
     </script>
 </head>
 <body>
-    <form name="employeeForm" method="post" action="http://localhost:3000/employees" target="_blank">
+    <form name="employeeForm" method="post"  target="_blank">
         <!-- <label for="id">empid</label>
         <input id="id" name="id" type="text"> -->
         <label for="empname">empname</label>

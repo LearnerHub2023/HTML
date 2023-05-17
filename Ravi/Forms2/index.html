@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <form method="post" action="http://localhost:3000/employees">        
+       <label for="id">empid</label>
+        <input id="id" name="id" type="text">
+        <label for="empname">empname</label>
+        <input id="empname" name="empname" type="text">
+        <label for="designation">designation</label>
+        <input id="designation" name="designation" type="text">
+        <button>submit</button>
+        <button onclick="post();">post</button>
+        <button onclick="put();">put</button>
+        <button onclick="deleteMethod();">delete</button>
+        <button onclick="patch();">patch</button>
+    </form>
+</body>
+</html>
