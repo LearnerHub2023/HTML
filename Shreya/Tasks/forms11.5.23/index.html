@@ -13,8 +13,17 @@
         border-radius: 1px;
         border-color: black;
         background-color: seashell;
+        background-color: seashell;
         }
   </style>
+  <script>
+    function onclickfunction(event){
+        console.log(event.target);
+       // window.alert('Member Enrolled Successfully');
+         
+    }
+</script>
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -28,7 +37,7 @@
 
     </div>
 
-    <form class="App-form-01" method="get" action="http://127.0.0.1:5500/Shreya/Tasks/forms11.5.23/index.html">
+    <form class="App-form-01" method="post" action="http://localhost:3000/memeberEnrollment" onsubmit="postCall(event)">
         <div>
             <div>
                 <label for="Title">Title</label>
@@ -68,25 +77,25 @@
             </div>
 
             <div>
-                <label for="date of birth">Date of Birth</label>
-                <input id="date of birth" class="date-picker-01">
+                <label for="dateofbirth">Date of Birth</label>
+                <input id="dateofbirth" class="date-picker-01">
                 <p class="instruction-02">(enter the date inDDMMYYYY format)</p>
 
             </div>
             <div>
-                <label for="mobile number">Mobile Number</label>
-                <input name="Mobile Number" class="Mob-Num-01">
+                <label for="mobilenumber">Mobile Number</label>
+                <input name="mobileNumber" class="Mob-Num-01">
 
-                <label for="email id">Email ID</label>
-                <input name="email id" class="email-01">
+                <label for="emailId">Email ID</label>
+                <input name="emailId" class="email-01">
             </div>
 
             <div>
                 <label for="password">Password</label>
-                <input name="Password" class="password-01">
+                <input name="password" class="password-01">
 
-                <label for="confirm password">Confirm Password</label>
-                <input name="confirm password" class="confirm password-01">
+                <label for="confirmpassword">Confirm Password</label>
+                <input name="confirmpassword" class="confirm password-01">
             </div>
 
             <div>   
@@ -95,8 +104,7 @@
             </div>
 
             <div>   
-                <label for="submit"></label>
-                <input class="sub-01" type="submit">                
+                <button onclick="onclickfunction(event);" type="submit">submit</button>              
             </div>
     </form>
 

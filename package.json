@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"json-server --watch ./database/db.json"
+    "start": "json-server --watch ./shreyaDB/db.json "
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "url": "https://github.com/LearnerHub2023/HTML/issues"
   },
   "homepage": "https://github.com/LearnerHub2023/HTML#readme",
-  "dependencies": {
+  "devDependencies": {
     "json-server": "^0.17.3"
   }
 }
