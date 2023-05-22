@@ -56,3 +56,32 @@ function deleteMethod(){
     }
     fetch(url, options).then(res=> console.log(res));
 }
+
+function newPost(event){
+event.preventDefault();
+alert(1111111);
+let form = document.querySelector("form");
+
+console.log(form)
+let url="http://localhost:3000/employees";
+let formData=new FormData(form);
+
+//console.log(formData.get(slt));
+let res=Object.fromEntries(formData.entries());
+res.slt=formData.getAll('slt');
+res.hello=formData.getAll('hello');
+
+
+let payload={
+    "empname": document.getElementById("empname").value,
+    "designation": document.getElementById("designation").value
+};
+let options={
+    method:"post",
+    headers:{
+        "Content-Type":"application/json"
+    },
+    body: JSON.stringify(res)
+}
+fetch(url, options).then(res=> res.json()).then(res=>console.log(res));
+}

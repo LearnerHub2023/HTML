@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form  method="post" action="http://localhost:3000/employees" onsubmit="genericSubmit(event)">
+        <div>
+            <div>choose your decesion</div>
+            <div>
+                <input type="radio" id="post" name="method" value="post" checked>
+                <label for="post">post</label>
+            </div>
+            <div>
+                <input type="radio" id="put" name="method" value="put">
+                <label for="put">put</label>
+            </div>
+            <div>
+                <input type="radio" id="patch" name="method" value="PATCH">
+                <label for="patch">patch</label>
+            </div>
+            <div>
+                <input type="radio" id="delete" name="method" value="delete">
+                <label for="delete">delete</label>
+            </div>
+        </div>
+        <div>
+            <label for="id">id</label>
+            <input type="number" id="id" name="id">
+        </div>
+        <div>
+            <label for="name1">name1</label>
+            <input type="text" id="name1" name="name1">
+        </div>
+        <div>
+            <label for="name2">name2</label>
+            <input type="text" id="name2" name="name2">
+        </div>
+        <div>
+            <label for="name3">name3</label>
+            <input type="text" id="name3" name="name3">
+        </div>
+        <div>
+            <label for="name4">name4</label>
+            <input type="text" id="name4" name="name4">
+        </div>
+        <div>
+            <label for="name5">name5</label>
+            <input type="text" id="name5" name="name5">
+        </div>
+        <div>
+            <label for="selectname1">selectname1</label>
+            <select name="selectname1" id="selectname1">
+                <option value="value1">value1</option>
+                <option value="value2">value2</option>
+                <option value="value3">value3</option>
+                <option value="value4">value4</option>
+                <option value="value5">value5</option>
+            </select>
+        </div>
+        <div>
+            <div>label for all checkboxs</div>
+            <div>
+                <input type="checkbox" id="checkboxnameil1" name="checkboxnameil" value="checkboxnameil1">
+                <label for="checkboxnameil1">checkboxnameil1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkboxnameil2" name="checkboxnameil" value="checkboxnameil2">
+                <label for="checkboxnameil2">checkboxnameil2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkboxnameil3" name="checkboxnameil" value="checkboxnameil3">
+                <label for="checkboxnameil3">checkboxnameil3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkboxnameil4" name="checkboxnameil" value="checkboxnameil4">
+                <label for="checkboxnameil4">checkboxnameil4</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkboxnameil5" name="checkboxnameil" value="checkboxnameil5">
+                <label for="checkboxnameil5">checkboxnameil5</label>
+            </div>
+        </div>
+        <div>
+            <div>label for all checkboxs</div>
+            <div>
+                <label for="checkboxnameli1">checkboxnameli1</label>
+                <input type="checkbox" id="checkboxnameli1" name="checkboxnameli" value="checkboxnameli1">
+            </div>
+            <div>
+                <label for="checkboxnameli2">checkboxnameli2</label>
+                <input type="checkbox" id="checkboxnameli2" name="checkboxnameli" value="checkboxnameli2">
+            </div>
+            <div>
+                <label for="checkboxnameli3">checkboxnameli3</label>
+                <input type="checkbox" id="checkboxnameli3" name="checkboxnameli" value="checkboxnameli3">
+            </div>
+            <div>
+                <label for="checkboxnameli4">checkboxnameli4</label>
+                <input type="checkbox" id="checkboxnameli4" name="checkboxnameli" value="checkboxnameli4">
+            </div>
+            <div>
+                <label for="checkboxnameli5">checkboxnameli5</label>
+                <input type="checkbox" id="checkboxnameli5" name="checkboxnameli" value="checkboxnameli5">
+            </div>
+        </div>  
+        <div>
+            <div>label for all radios</div>
+            <div>
+                <input type="radio" id="radionameil1" name="radionameil" value="radionameil1">
+                <label for="radionameil1">radionameil1</label>
+            </div>
+            <div>
+                <input type="radio" id="radionameil2" name="radionameil" value="radionameil2">
+                <label for="radionameil2">radionameil2</label>
+            </div>
+            <div>
+                <input type="radio" id="radionameil3" name="radionameil" value="radionameil3">
+                <label for="radionameil3">radionameil3</label>
+            </div>
+            <div>
+                <input type="radio" id="radionameil4" name="radionameil" value="radionameil4">
+                <label for="radionameil4">radionameil4</label>
+            </div>
+            <div>
+                <input type="radio" id="radionameil5" name="radionameil" value="radionameil5">
+                <label for="radionameil5">radionameil5</label>
+            </div>
+        </div>
+        <div>
+            <div>label for all radios</div>
+            <div>
+                <label for="radionameli1">radionameli1</label>
+                <input type="radio" id="radionameli1" name="radionameli" value="radionameli1">
+            </div>
+            <div>
+                <label for="radionameli2">radionameli2</label>
+                <input type="radio" id="radionameli2" name="radionameli" value="radionameli2">
+            </div>
+            <div>
+                <label for="radionameli3">radionameli3</label>
+                <input type="radio" id="radionameli3" name="radionameli" value="radionameli3">
+            </div>
+            <div>
+                <label for="radionameli4">radionameli4</label>
+                <input type="radio" id="radionameli4" name="radionameli" value="radionameli4">
+            </div>
+            <div>
+                <label for="radionameli5">radionameli5</label>
+                <input type="radio" id="radionameli5" name="radionameli" value="radionameli5">
+            </div>
+        </div>
+
+        
+                 
+        <button type="submit">submit</button>
+        <button type="reset">reset</button> 
+    </form>
+</body>
+
+</html>

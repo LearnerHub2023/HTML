@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onclickfunction(event){
+            console.log(event.target);
+           // window.alert('hello');
+             console.log('hi'); let x=10; 
+            // alert(x);
+        }
+    </script>
+    <script src="main2.js"></script>
+</head>
+
+<body>
+    <h1>forms with methods hello 123</h1>
+    <form method="post" action="http://localhost:3000/employees" onsubmit="postCall(event)">
+        <div>
+            <label for="id">id</label>
+            <input id="id" name="id" type="text">
+        </div>
+        <div>
+            <label for="name">name</label>
+            <input id="name" name="name" type="text">
+        </div>
+        <div>
+            <label for="lastName">last name</label>
+            <input id="lastName" name="lastName" type="text">
+        </div>
+        <div>
+            <label for="designation">designation</label>
+            <input id="designation" name="designation" type="text">
+        </div>
+        <div>
+            <div>label for all checkboxs</div>
+            <div>
+                <input type="checkbox" id="checkboxnameil1" name="checkboxnameil" value="checkboxnameil1">
+                <label for="checkboxnameil1">checkboxnameil1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkboxnameil2" name="checkboxnameil" value="checkboxnameil2">
+                <label for="checkboxnameil2">checkboxnameil2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkboxnameil3" name="checkboxnameil" value="checkboxnameil3">
+                <label for="checkboxnameil3">checkboxnameil3</label>
+            </div>
+        </div>
+        <div>
+            <div>label for all radios</div>
+            <div>
+                <input type="radio" id="radionameil1" name="chooise" value="radionameil1">
+                <label for="radionameil1">radionameil1</label>
+            </div>
+            <div>
+                <input type="radio" id="radionameil2" name="chooise" value="radionameil2">
+                <label for="radionameil2">radionameil2</label>
+            </div>
+            <div>
+                <input type="radio" id="radionameil3" name="chooise" value="radionameil3">
+                <label for="radionameil3">radionameil3</label>
+            </div>
+            <div>
+                <input type="radio" id="radionameil4" name="chooise" value="radionameil4">
+                <label for="radionameil4">radionameil4</label>
+            </div>
+            <div>
+                <input type="radio" id="radionameil5" name="chooise" value="radionameil5">
+                <label for="radionameil5">radionameil5</label>
+            </div>
+        </div>
+        
+
+        
+        <button onclick="" type="submit">submit</button>
+    </form>
+
+    <button onclick="onclickfunction(event);" >button</button>
+    <p onclick="onclickfunction(event);" >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae laborum hic a repellat quo, esse eum! Facilis nulla perspiciatis architecto deserunt quae esse veniam ipsa.
+    </p>
+    <div onclick="onclickfunction(event);" >
+        div content
+    </div>
+</body>
+</html>

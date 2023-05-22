@@ -8,18 +8,28 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <form method="post" action="http://localhost:3000/employees">        
+    <form onsubmit="newPost(event)">        
        <label for="id">empid</label>
         <input id="id" name="id" type="text">
         <label for="empname">empname</label>
         <input id="empname" name="empname" type="text">
         <label for="designation">designation</label>
         <input id="designation" name="designation" type="text">
+        <select name="slt" multiple>
+            <option value="1">one</option>
+            <option value="1">two</option>
+            <option value="3">three</option>
+        </select>
+        <input name="hello" type="checkbox" value="one">
+        <input name="hello" type="checkbox" value="two">
+        <input name="hello" type="checkbox" value="three">
+        <input name="hello" type="checkbox" value="four">
         <button>submit</button>
-        <button onclick="post();">post</button>
-        <button onclick="put();">put</button>
-        <button onclick="deleteMethod();">delete</button>
-        <button onclick="patch();">patch</button>
+        <button type="button" onclick="post();">post</button>
+        <button type="button" onclick="put();">put</button>
+        <button type="button" onclick="deleteMethod();">delete</button>
+        <button type="button" onclick="patch();">patch</button>
+        <button>newPost</button>
     </form>
 </body>
 </html>
