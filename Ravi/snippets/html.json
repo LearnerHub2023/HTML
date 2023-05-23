@@ -1,0 +1,58 @@
+{
+	"Create form with specified no of elements": {
+		"prefix": "rk:html:form",
+		"body": [
+			"form>(div>label[for=name$]{name$}+input[id=name$][name=name$])*$1",
+			"$2"
+		],
+		"description": "form to submit"
+	},
+	"Create select element with options": {
+		"prefix": "rk:html:select",
+		"body": [
+			"div>label[for=selectname$]{selectname$}+select[id=selectname$][name=selectname$]>(option[value='value$']{value$})*$1",
+			"$2"
+		],
+		"description": "choose any option"
+	},
+	"Create checkbox elements (label + input)": {
+		"prefix": "rk:html:checkbox(l:i)",
+		"body": [
+			"div>div{label for all checkboxs}+(div>label[for=checkboxnameli$]{checkboxnameli$}+input[type=checkbox][id=checkboxnameli$][name=checkboxnameli][value=checkboxnameli$])*$1",
+			"$2"
+		],
+		"description": "choose any option"
+	},
+	"Create checkbox elements (input + label)": {
+		"prefix": "rk:html:checkbox(i:l)",
+		"body": [
+			"div>div{label for all checkboxs}+(div>input[type=checkbox][id=checkboxnameil$][name=checkboxnameil][value=checkboxnameil$]+label[for=checkboxnameil$]{checkboxnameil$})*$1",
+			"$2"
+		],
+		"description": "choose any option"
+	},
+	"Create radio elements (label + input)": {
+		"prefix": "rk:html:radio(l:i)",
+		"body": [
+			"div>div{label for all radios}+(div>label[for=radionameli$]{radionameli$}+input[type=radio][id=radionameli$][name=radionameli][value=radionameli$])*$1",
+			"$2"
+		],
+		"description": "choose any option"
+	},
+	"Create radio elements (input + label)": {
+		"prefix": "rk:html:radio(i:l)",
+		"body": [
+			"div>div{label for all radios}+(div>input[type=radio][id=radionameil$][name=radionameil][value=radionameil$]+label[for=radionameil$]{radionameil$})*$1",
+			"$2"
+		],
+		"description": "choose any option"
+	},
+
+	"create new input field": {
+		"prefix": "rk:input",
+		"body": [
+			"(div>label[for='input123']+input[type='text'][name='input123'][id='input123'])*$1"
+		],
+		"description": "new input field"
+	}
+}

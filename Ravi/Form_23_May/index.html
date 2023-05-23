@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <form method="post" action="http://localhost:3000/commonman" onsubmit="postCall(event)">      
+      <div>
+        <label for="firstName">firstName</label>
+        <input type="text" name="firstName" id="firstName">
+      </div>
+      <div>
+        <label for="lastName">lastName</label>
+        <input type="text" name="lastName" id="lastName">
+      </div>
+      <div>
+        <label for="age">age</label>
+        <input type="text" name="age" id="age">
+      </div>
+      <div>
+        <label for="address">address</label>
+        <input type="text" name="address" id="address">
+      </div>
+      <div>
+        <div>label for all checkboxs</div>
+        <div>
+            <input type="checkbox" id="car" name="vehicles" value="car">
+            <label for="car">car</label>
+        </div>
+        <div>
+            <input type="checkbox" id="bike" name="vehicles" value="bike">
+            <label for="bike">bike</label>
+        </div>
+        <div>
+            <input type="checkbox" id="boat" name="vehicles" value="boat">
+            <label for="boat">boat</label>
+        </div>
+        <div>
+            <input type="checkbox" id="bus" name="vehicles" value="bus">
+            <label for="bus">bus</label>
+        </div>
+      </div>
+      
+      <div>
+        <input type="submit">
+      </div>      
+    </form>
+</body>
+</html>
