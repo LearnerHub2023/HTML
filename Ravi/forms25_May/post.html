@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action="http://localhost:3000/students" method="post" onsubmit="postCall(event)">
+        <div>
+            <label for="firstName">firstName</label>
+            <input type="text" name="firstName" id="firstName" required>
+        </div>
+        <div>
+            <label for="lastName">lastName</label>
+            <input type="text" name="lastName" id="lastName" value="gunji" readonly required>
+        </div>
+        <input id="colorinput" type="color" name="uniform" required>
+        <input  type="button" value="apply color to div" onclick="applyColor(event)">
+        <div id="divid" style="border:1px solid black;">
+            <h1>Hello World</h1>
+        </div>
+        <div>
+            <label for="dob">dob</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <button >submit</button>
+    </form>
+</body>
+</html>
