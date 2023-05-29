@@ -8,7 +8,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <form action="http://localhost:3000/students" method="post" onsubmit="postCall(event)">
+    <form action="http://localhost:3000/students" method="post" onsubmit="postCall(event)" >
         <div>
             <label for="firstName">firstName</label>
             <input type="text" name="firstName" id="firstName" required>
@@ -26,6 +26,40 @@
             <label for="dob">dob</label>
             <input type="date" name="dob" id="dob" required>
         </div>
+        <div>
+            <label for="time">time</label>
+            <input type="datetime-local" name="time" id="time">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="fileinput">fileinput</label>
+            <input type="file" name="fileinput" id="fileinput">
+        </div>
+        <div>
+            <label for="">hidden field</label>
+            <input type="hidden" name="hiddenField" value="testing">
+        </div>
+        <div>
+            <label for="imageFile">imageFile</label>
+            <input type="image" name="imageFile" id="imageFile" src="" alt="submit" value="imagefile">
+        </div>
+        <input type="month">
+        <input type="number">
+        <input type="range">
+        <input type="search">
+        <input type="tel">
+        <input type="time">
+        <input type="url">
+        <input type="week">
+        <select multiple>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
         <button >submit</button>
     </form>
 </body>

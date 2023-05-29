@@ -1,7 +1,9 @@
 function postCall(event) {
   event.preventDefault();
   let form = event.target;
-  let payload = Object.fromEntries(new FormData(form).entries());
+  let formdata=new FormData(form).entries();
+  console.log(formdata);
+  let payload = Object.fromEntries(formdata);
   const url = form.action;
   const options = {
     method: form.method,
