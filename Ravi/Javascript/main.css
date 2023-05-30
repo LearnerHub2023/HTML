@@ -6,3 +6,10 @@
     border: 1px solid blue;
     margin-bottom: 24px;
 }
+
+#square{
+    border:10px solid green;
+    width:100px;
+    height:100px;
+    background-color: yellow;
+}
