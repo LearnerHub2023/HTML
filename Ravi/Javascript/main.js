@@ -38,6 +38,11 @@ document
     window.alert("hello");
     alert("hi");
     console.log("testing");
-    document.write("testing");
+    //document.write("testing");
   });
 
+  document.querySelector("#varCode").addEventListener("click",function(){
+    var x;
+    x=10;
+    document.querySelector("#varOutput").innerText=x;
+  });
