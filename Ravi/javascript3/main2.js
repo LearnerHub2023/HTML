@@ -26,7 +26,10 @@ let car = {
     this.petrol -= 5;
   },
   showPetrol:function(){
-    console.log(this.petrol);
+    let show=()=>{
+        console.log(this);
+      }
+      show();
   }
 };
 
